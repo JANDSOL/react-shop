@@ -1,39 +1,35 @@
 @import 'vars';
 
-.Login {
+.CreateAccount {
 	width: 100%;
 	height: calc(100vh - var(--header-height));
 	display: grid;
 	place-items: center;
 }
-.Login-container {
+.CreateAccount-container {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	width: 300px;
 }
-.Login-Logo {
-	width: 150px;
-	margin-bottom: 48px;
-	justify-self: center;
-	display: none;
+.CreateAccount-title {
+	font-size: var(--lg);
+	margin-bottom: 36px;
+	text-align: start;
 }
-.Login-form {
+.CreateAccount-Form {
 	display: flex;
 	flex-direction: column;
 }
-.Login-form a {
-	color: var(--hospital-green);
-	font-size: var(--sm);
-	text-align: center;
-	text-decoration: none;
-	margin-bottom: 52px;
+.CreateAccount-Form div {
+	display: flex;
+	flex-direction: column;
 }
-.Login-label {
+.CreateAccount-label {
 	font-size: var(--sm);
 	font-weight: bold;
 	margin-bottom: 4px;
 }
-.Login-input {
+.CreateAccount-input {
 	background-color: var(--text-input-field);
 	border: none;
 	border-radius: 8px;
@@ -42,10 +38,12 @@
 	padding: 6px;
 	margin-bottom: 12px;
 }
-.Login-input-email {
+.CreateAccount-input-name,
+.CreateAccount-input-email,
+.CreateAccount-input-password {
 	margin-bottom: 22px;
 }
-.Login-primary-button {
+.CreateAccount-primary-button {
 	background-color: var(--hospital-green);
 	border-radius: 8px;
 	border: none;
@@ -56,28 +54,21 @@
 	font-weight: bold;
 	height: 50px;
 }
-.Login-secondary-button {
-	background-color: var(--white);
-	border-radius: 8px;
-	border: 1px solid var(--hospital-green);
-	color: var(--hospital-green);
-	width: 100%;
-	cursor: pointer;
-	font-size: var(--md);
-	font-weight: bold;
-	height: 50px;
-}
-.Login-LoginButton {
+.CreateAccount-login-button {
 	margin-top: 14px;
 	margin-bottom: 30px;
 }
 @media (max-width: 640px) {
-	.Login-Logo {
-		display: block;
+	.CreateAccount-Form-container {
+		height: 100%;
+	}
+	.CreateAccount-Form {
+		height: 100%;
+		justify-content: space-between;
 	}
 }
 @media (max-width: 350px) {
-	.Login-container {
+	.CreateAccount-container {
 		width: 230px;
 	}
 }

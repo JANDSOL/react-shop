@@ -1,0 +1,31 @@
+@import 'vars';
+
+.Orders {
+	width: 100%;
+	height: calc(100vh - var(--header-height));
+	display: grid;
+	place-items: center;
+	margin: 50px 0px;
+}
+.Orders-title {
+	font-size: var(--lg);
+	margin-bottom: 40px;
+	text-align: center;
+}
+.Orders-container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 300px;
+}
+.Orders-content {
+	display: flex;
+	flex-direction: column;
+}
+@media (max-width: 350px) {
+	.Orders-container {
+		width: 280px;
+	}
+	.Orders-title {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,62 @@
+@import 'vars';
+
+.MyAccount {
+	width: 100%;
+	height: calc(100vh - var(--header-height));
+	display: grid;
+	place-items: center;
+}
+.MyAccount-container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 300px;
+}
+.MyAccount-title {
+	font-size: var(--lg);
+	margin-bottom: 36px;
+	text-align: start;
+}
+.MyAccount-Form {
+	display: flex;
+	flex-direction: column;
+}
+.MyAccount-Form div {
+	display: flex;
+	flex-direction: column;
+}
+.MyAccount-label {
+	font-size: var(--sm);
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+.MyAccount-value {
+	color: var(--very-light-pink);
+	font-size: var(--md);
+	margin: 8px 0 32px 0;
+}
+.MyAccount-secondary-button {
+	background-color: var(--white);
+	border-radius: 8px;
+	border: 1px solid var(--hospital-green);
+	color: var(--hospital-green);
+	width: 100%;
+	cursor: pointer;
+	font-size: var(--md);
+	font-weight: bold;
+	height: 50px;
+}
+.MyAccount-login-button {
+	margin-top: 14px;
+	margin-bottom: 30px;
+}
+@media (max-width: 640px) {
+	.MyAccount-Form {
+		height: 100%;
+		justify-content: space-between;
+	}
+}
+@media (max-width: 350px) {
+	.MyAccount-container {
+		width: 230px;
+	}
+}

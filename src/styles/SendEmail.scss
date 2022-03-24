@@ -1,0 +1,76 @@
+@import 'vars';
+
+.SendEmail {
+	width: 100%;
+	height: calc(100vh - var(--header-height));
+	display: grid;
+	place-items: center;
+}
+.SendEmail-form-container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 300px;
+	justify-items: center;
+}
+.SendEmail-Logo {
+	width: 150px;
+	margin-bottom: 48px;
+	justify-self: center;
+	display: none;
+}
+.SendEmail-title {
+	font-size: var(--lg);
+	margin-bottom: 12px;
+	text-align: center;
+}
+.SendEmail-subtitle {
+	color: var(--very-light-pink);
+	font-size: var(--md);
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 32px;
+	text-align: center;
+}
+.SendEmail-email-image {
+	width: 132px;
+	height: 132px;
+	border-radius: 50%;
+	background-color: var(--text-input-field);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 24px;
+}
+.SendEmail-email-image img {
+	width: 80px;
+}
+.SendEmail-resend {
+	font-size: var(--sm);
+}
+.SendEmail-resend span {
+	color: var(--very-light-pink);
+}
+.SendEmail-resend a {
+	color: var(--hospital-green);
+	text-decoration: none;
+}
+.SendEmail-primary-button {
+	background-color: var(--hospital-green);
+	border-radius: 8px;
+	border: none;
+	color: var(--white);
+	width: 100%;
+	cursor: pointer;
+	font-size: var(--md);
+	font-weight: bold;
+	height: 50px;
+}
+.SendEmail-login-button {
+	margin-top: 14px;
+	margin-bottom: 30px;
+}
+@media (max-width: 350px) {
+	.SendEmail-form-container {
+		width: 230px;
+	}
+}

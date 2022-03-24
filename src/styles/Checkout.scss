@@ -1,0 +1,75 @@
+@import 'vars';
+
+.Checkout {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	align-items: flex-start;
+  justify-content: center;
+	margin-top: 100px;
+}
+.Checkout-title {
+	font-size: var(--lg);
+	margin-bottom: 40px;
+}
+.Checkout-container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 300px;
+}
+.Checkout-container .OrderItem:last-child {
+	margin-bottom: 110px;
+}
+.Checkout-content {
+	display: flex;
+	flex-direction: column;
+}
+.Checkout-order {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 16px;
+	align-items: center;
+	background-color: var(--text-input-field);
+	margin-bottom: 24px;
+	border-radius: 8px;
+	padding: 0 24px;
+}
+.Checkout-order p:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+}
+.Checkout-order p span:nth-child(1) {
+	font-size: var(--md);
+	font-weight: bold;
+}
+.Checkout-order p span:nth-child(2) {
+	font-size: var(--sm);
+	color: var(--very-light-pink);
+}
+.Checkout-order p:nth-child(2) {
+	text-align: end;
+	font-weight: bold;
+}
+@media screen and (max-width: 350px) {
+	.Checkout-title {
+		text-align: center;
+	}
+	.Checkout-container {
+		width: 280px;
+	}
+	.Checkout-content {
+		place-items: center;
+	}
+	.Checkout-order {
+		width: 200px;
+	}
+	.Checkout-order p span:nth-child(1) {
+		font-size: 14px;
+	}
+	.Checkout-order p span:nth-child(2) {
+		font-size: 12px;
+	}
+	.Checkout-order p:nth-child(2) {
+		font-size: 14px;
+	}
+}
