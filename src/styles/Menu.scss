@@ -1,11 +1,15 @@
 @import 'vars';
 
 .Menu {
+	background: var(--white);
 	width: 100px;
 	height: auto;
 	border: 1px solid var(--very-light-pink);
 	border-radius: 6px;
 	padding: 20px 20px 0 20px;
+	position: absolute;
+	top: calc(var(--header-height) - 1px);
+	right: 50px;
 }
 .Menu ul {
 	list-style: none;
@@ -32,4 +36,8 @@
 	text-decoration: none;
 	margin-bottom: 20px;
 	display: inline-block;
+}
+.navbar-email {
+	user-select: none;
+	cursor: pointer;
 }
