@@ -1,6 +1,9 @@
 # Momentary folder -> curso-frontend-developer-practico
 curso-frontend-developer-practico/
 
+# Webpack
+build
+
 # Created by https://www.toptal.com/developers/gitignore/api/node,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,react
 
