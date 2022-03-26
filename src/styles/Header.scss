@@ -50,6 +50,8 @@ nav {
 }
 .navbar-shopping-cart {
 	position: relative;
+	cursor: pointer;
+	user-select: none;
 }
 .navbar-shopping-cart div {
 	width: 16px;
