@@ -8,21 +8,21 @@ const useInitialState = () => {
 	const [state, setState] = useState(initialState);
 
 	const addToCart = (payload) => {
-		if(!state.cart.includes(payload)){
-			setState({
-				...state,
-				cart: [...state.cart, payload]
-			});
-		}
-	};
-	const removeFromCart = (payload) =>{
-		const newArray = state.cart.filter(product => product != payload);
 		setState({
 			...state,
-			cart: [...newArray]
+			cart: [...state.cart, payload]
 		});
+	};
 
-	}
+	const removeFromCart = (payload, indexValue) => {
+    setState({
+      ...state,
+      cart: state.cart.filter(
+        (item, index) => item.id != payload && index != indexValue
+      ),
+    });
+  };
+
 	return {
 		state,
 		addToCart,

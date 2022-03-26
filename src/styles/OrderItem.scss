@@ -23,6 +23,10 @@
   font-size: var(--md);
   font-weight: bold;
 }
+.OrderItem-icon-close {
+	cursor: pointer;
+	user-select: none;
+}
 @media screen and (max-width: 350px) {
 	.OrderItem {
 		width: 90%;

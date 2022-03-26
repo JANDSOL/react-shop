@@ -1,5 +1,8 @@
 @import 'vars';
 
+* {
+	-webkit-tap-highlight-color: transparent;
+}
 body {
 	margin: 0;
 	font-family: 'Quicksand', sans-serif;
@@ -34,6 +37,6 @@ a {
 a:focus, a:visited, a:active {
 	outline: none;
 }
-* {
-	-webkit-tap-highlight-color: transparent;
+img, button, a {
+	user-select: none;
 }
