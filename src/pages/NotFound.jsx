@@ -11,7 +11,7 @@ const NotFound = () => {
 			<div className="error-column-text">
 				<h1>OH NO, 404!</h1>
 				<h1>PAGE <span>NOT</span> FOUND</h1>
-				<a href="#">► Return to Home...</a>
+				<a href="/">► Return to Home...</a>
 			</div>
 		</section>
 	);
